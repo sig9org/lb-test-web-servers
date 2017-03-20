@@ -1,3 +1,3 @@
 <?php
-  echo getenv("LB_NODE");
+  echo getenv("LB_NODE")."\n";
 ?>
