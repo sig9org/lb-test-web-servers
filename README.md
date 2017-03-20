@@ -6,7 +6,7 @@ Start docker image normally.
 docker run -p 10000:80 -dit sig9/lb-test-web-servers
 ```
 
-Specify node name (`LB_NODE`) and color (`LB_COLOR`.
+Specify node name (`LB_NODE`) and color (`LB_COLOR`).
 
 ```sh
 docker run -p 10000:80 -e LB_COLOR=green -e LB_NODE=Web-01 -dit sig9/lb-test-web-servers
