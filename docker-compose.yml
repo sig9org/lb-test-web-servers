@@ -1,0 +1,72 @@
+version: '2'
+services:
+  Web-01:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10001:80"
+    environment:
+      - LB_NODE=Web-01
+      - LB_COLOR=aliceblue
+  Web-02:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10002:80"
+    environment:
+      - LB_NODE=Web-02
+      - LB_COLOR=darkcyan
+  Web-03:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10003:80"
+    environment:
+      - LB_NODE=Web-03
+      - LB_COLOR=lightyellow
+  Web-04:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10004:80"
+    environment:
+      - LB_NODE=Web-04
+      - LB_COLOR=coral
+  Web-05:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10005:80"
+    environment:
+      - LB_NODE=Web-05
+      - LB_COLOR=lavender
+  Web-06:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10006:80"
+    environment:
+      - LB_NODE=Web-06
+      - LB_COLOR=darkslategray
+  Web-07:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10007:80"
+    environment:
+      - LB_NODE=Web-07
+      - LB_COLOR=crimson
+  Web-08:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10008:80"
+    environment:
+      - LB_NODE=Web-08
+      - LB_COLOR=royalblue
+  Web-09:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10009:80"
+    environment:
+      - LB_NODE=Web-09
+      - LB_COLOR=hotpink
+  Web-10:
+    image: sig9/lb-test-web-servers
+    ports:
+      - "10010:80"
+    environment:
+      - LB_NODE=Web-10
+      - LB_COLOR=springgreen
